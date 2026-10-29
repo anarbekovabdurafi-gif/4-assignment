@@ -1,0 +1,15 @@
+def decimalToBinary(n):
+    if n == 0:
+        return '0'
+
+    result = ''
+
+    while n > 0:
+        remainder = n % 2
+        result = str(remainder) + result
+        n //= 2
+
+    return result
+
+n = int(input())
+print('Binary =', decimalToBinary(n))
