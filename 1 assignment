@@ -1,0 +1,5 @@
+def printStrip(n, symbol):
+    print(symbol * n)
+
+n = int(input())
+printStrip(n, '#')
